@@ -1,0 +1,48 @@
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.flex-equal > * {
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+
+
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 0;
+    background-color: #010103;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+    text-align: center;
+}
+
+.carousel-item > img {
+    height: 100%;
+    margin: 0 auto;
+}
+
+.logo > img {
+    height: 24px;
+}
+
+.apropos, .affiches {
+    background-color: #f4f4f4;
+}
+
+.affiches img {
+    height: 400px;
+} 
