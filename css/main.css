@@ -35,8 +35,12 @@
     margin: 0 auto;
 }
 
-.logo > img {
-    height: 24px;
+.navbar li a {
+    color: #ff6600;
+}
+
+.navbar-brand > img {
+    height: 30px;
 }
 
 .apropos, .affiches {
@@ -46,3 +50,13 @@
 .affiches img {
     height: 400px;
 } 
+
+.col-12 + .col-12 {
+    margin-top: 15px;
+}  
+
+@media (min-width: 768px) {
+    .col-12 + .col-12 {
+        margin-top: 0px;
+    }  
+}

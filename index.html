@@ -20,14 +20,20 @@
 
     </head>
     <body>
-        <nav class="py-1">
-            <div class="container d-flex flex-column flex-md-row justify-content-between">
-                <a class="py-2 logo"><img src="img/logo.png"> Choeur Scénique Brésilien</a>
-                <a class="py-2" href="#apropos">À propos</a>
-                <a class="py-2" href="#videos">Videos</a>
-                <a class="py-2" href="#affiches">Affiches</a>
-                <a class="py-2" href="#">Prochains spectacles</a>
-                <a class="py-2" href="#">Contact</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+            <a class="navbar-brand"><img src="img/logo.png"> Choeur Scénique Brésilien</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>            
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item p-2"><a href="#apropos">À propos</a></li>
+                    <li class="nav-item p-2"><a href="#videos">Vidéos</a></li>
+                    <li class="nav-item p-2"><a href="#affiches">Affiches</a></li>
+                    <li class="nav-item p-2"><a href="#">Prochains spectacles</a></li>
+                    <li class="nav-item p-2"><a href="#">Contact</a></li>
+                </ul>
             </div>
         </nav>
 
@@ -62,11 +68,11 @@
             <a name="apropos"></a>
             <div class="apropos">
                 <div class="row">
-                    <div class="col-sm overflow-hidden">
+                    <div class="col-12 col-lg overflow-hidden">
                         <h2 class="px-2 py-4">À propos</h2>
                         <p class="lead px-2">Le Chœur Scénique Brésilienne est un groupe qui célèbre la diversité de la culture et de la musique brésilienne au Canadá. Son objectif est de diffuser la musique brésilienne au travers la production de spectacles artistiques qui mettent en valeur d’importants aspects de la culture brésilienne encore peu connus à l’extérieur du Brésil. Ses performances, chaleureuses, dynamiques et de haut niveau, incluent des danses et des percussions. Sous la direction artistique de Taia Goedert et la direction musicale d’Auro Moura, le Chœur Scénique Brésilien a débuté ses activités en août 2015 et actuellement est composé de 36 chanteurs et 5 musiciens.</p>
                     </div>
-                    <div class="col-sm">
+                    <div class="col-12 col-lg text-center">
                         <img src="img/apropos.jpg" class="img-fluid">
                     </div>
                 </div>
@@ -76,13 +82,13 @@
             <div class="videos mb-4">
                 <h2 class="px-2 py-4">Vidéos</h2>
                 <div class="row">
-                    <div class="col-sm text-center">
+                    <div class="col-md-4 col-12">
                         <iframe class="embed-responsive" width="560" height="315" src="https://www.youtube.com/embed/6L--o2oxy-Y?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
-                    <div class="col-sm text-center">
+                    <div class="col-md-4 col-12">
                         <iframe class="embed-responsive" width="560" height="315" src="https://www.youtube.com/embed/g32WeLa-fu4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
-                    <div class="col-sm text-center">
+                    <div class="col-md-4 col-12">
                         <iframe class="embed-responsive" width="560" height="315" src="https://www.youtube.com/embed/yJSCKivu1Yc?rel=0&amp;controls=0&amp;showinfo=0&amp;start=12" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -91,7 +97,7 @@
             <a name="affiches"></a>
             <div class="affiches">
                 <h2 class="px-2 py-4">Affiches</h2>
-                <div class="row">
+                <div class="row pb-4">
                     <div class="col-sm text-center">
                         <img class="img-fluid rounded" src="img/cartazes/saudade.jpg">
                     </div>
