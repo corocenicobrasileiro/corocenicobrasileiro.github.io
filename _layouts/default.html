@@ -15,24 +15,23 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        <!-- Custom styles for this template -->
         <link href="./css/main.css" rel="stylesheet">
+        <link href="./fonts/style.css" rel="stylesheet">
 
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
-            <a class="navbar-brand"><img src="img/logo.png"> Choeur Scénique Brésilien</a>
+            <a class="navbar-brand"><img src="img/logo.png" class="logo"> Choeur Scénique Brésilien</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>            
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item p-2"><a href="/#apropos">À propos</a></li>
-                    <li class="nav-item p-2"><a href="/#videos">Vidéos</a></li>
-                    <li class="nav-item p-2"><a href="/#affiches">Affiches</a></li>
-                    <li class="nav-item p-2"><a href="evenements.html">Prochains événements</a></li>
-                    <li class="nav-item p-2"><a href="#">Contact</a></li>
+                    <li class="nav-item p-2"><span class="icon-home3 pr-1"></span><a href="/">Accueil</a></li>
+                    <li class="nav-item p-2"><span class="icon-video-camera pr-1"></span><a href="/videos.html">Vidéos</a></li>
+                    <li class="nav-item p-2"><span class="icon-calendar pr-1"></span><a href="evenements.html">Prochains événements</a></li>
+                    <li class="nav-item p-2"><span class="icon-bubbles pr-1"></span><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -41,17 +40,37 @@
         {{content}}
         </div>
 
-        <footer class="text-muted py-4">
-            <div class="container">
-                <p class="float-right">
-                <a href="#">Revenir en haut</a>
-                </p>
-                <p>Choeur scénique brésilien &dash; 2018</p>
+        <footer class="text-muted py-4 bg-light mt-4">
+            <div class="container-fluid">
+                <div class="row mb-4">
+                    <div class="col">
+                        <img src="img/logo.png" class="logo"> Choeur Scénique Brésilien &copy; 2018
+                        <a class="icon-facebook ml-2" href="https://www.facebook.com/corocenicobrasileiro/" target="_blank"></a>
+                        <a class="icon-youtube ml-2" href="https://www.youtube.com/channel/UCpPjBIy3jjm6YF57O9pUiMQ" target="_blank"></a>                        
+                    </div>
+                    <div class="col text-right"><a href="#">En haut</a></div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="fb-like" data-href="https://www.facebook.com/corocenicobrasileiro/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                    </div>
+                    <div class="col text-right">
+
+                    </div>
+                </div>
             </div>
         </footer>
                   
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.12&appId=809377419148482&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     </body>
 </html>

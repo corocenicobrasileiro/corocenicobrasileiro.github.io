@@ -16,7 +16,9 @@
 .overflow-hidden { overflow: hidden; }
 
 
-
+footer a:hover {
+    text-decoration: none;
+}
 
 /* Carousel base class */
 .carousel {
@@ -35,15 +37,15 @@
     margin: 0 auto;
 }
 
-.navbar li a {
+.navbar li a, .navbar li span {
     color: #ff6600;
 }
 
-.navbar-brand > img {
+.logo {
     height: 30px;
 }
 
-.apropos, .affiches {
+.apropos {
     background-color: #f4f4f4;
 }
 
@@ -59,4 +61,14 @@
     .col-12 + .col-12 {
         margin-top: 0px;
     }  
+}
+
+footer .icon-facebook{
+    color: #4080ff;
+    font-size: 20px;
+}
+
+footer .icon-youtube {
+    font-size: 20px;
+    color: red;
 }
