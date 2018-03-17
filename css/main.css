@@ -53,7 +53,7 @@ footer a:hover {
     height: 400px;
 } 
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
     .navbar-brand {
         font-size: 0.9em;
     }  
@@ -67,4 +67,9 @@ footer .icon-facebook{
 footer .icon-youtube {
     font-size: 20px;
     color: red;
+}
+
+.card {
+    width: 18rem;
+    margin-bottom: 20px;
 }
