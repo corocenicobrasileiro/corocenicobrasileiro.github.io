@@ -73,3 +73,13 @@ footer .icon-youtube {
     width: 18rem;
     margin-bottom: 20px;
 }
+
+.contact {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .contact {
+        width: 500px;
+    }  
+}

@@ -3,3 +3,32 @@ layout: default
 ---
 
 <h2>Contact</h2>
+
+<form class="contact" onsubmit="envoyer(); return false;">
+    <div class="form-group">
+        <label for="nome">Nom</label>
+        <input type="text" class="form-control" id="nome" placeholder="Votre nom" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Courriel</label>
+        <input type="email" class="form-control" id="email" placeholder="Votre courriel" required>
+        <small id="emailHelp" class="form-text text-muted">Pour que nous puissions vous répondre.</small>
+    </div>
+    <div class="form-group">
+        <label for="texto">Sujet</label>
+        <textarea class="form-control" required></textarea>
+    </div>
+    <div class="g-recaptcha" data-sitekey="6LcJcU0UAAAAAFMPfdOeEmSrj5Oi0VjWVErp0TFf"></div>
+    <br/>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+</form>
+
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
+
+<script>
+    function envoyer(){
+        if(!grecaptcha.getResponse()) return;
+        
+        
+    }
+</script>
