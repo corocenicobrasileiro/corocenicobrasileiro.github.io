@@ -4,7 +4,7 @@ layout: default
 
 <h2>Contact</h2>
 
-<form class="contact" onsubmit="envoyer(); return false;">
+<form class="contact" onsubmit="return !!grecaptcha.getResponse();" action="https://corocenico-198523.appspot.com/contact/">
     <div class="form-group">
         <label for="nome">Nom</label>
         <input type="text" class="form-control" id="nome" placeholder="Votre nom" required>
@@ -16,7 +16,7 @@ layout: default
     </div>
     <div class="form-group">
         <label for="texto">Sujet</label>
-        <textarea class="form-control" required></textarea>
+        <textarea class="form-control" name="texto" required></textarea>
     </div>
     <div class="g-recaptcha" data-sitekey="6LcJcU0UAAAAAFMPfdOeEmSrj5Oi0VjWVErp0TFf"></div>
     <br/>
@@ -24,11 +24,3 @@ layout: default
 </form>
 
 <script src='https://www.google.com/recaptcha/api.js' async defer></script>
-
-<script>
-    function envoyer(){
-        if(!grecaptcha.getResponse()) return;
-        
-        
-    }
-</script>
